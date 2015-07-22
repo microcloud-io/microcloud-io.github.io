@@ -1,0 +1,194 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* 
+  Allow angular.js to be loaded in body, hiding cloaked elements until 
+    templates compile.  The !important is important given that there may be 
+      other selectors that are more specific or come later and might alter display.  
+       */
+[ng\:cloak],
+[ng-cloak],
+.ng-cloak {
+  display: none !important;
+}
+body {
+  font-weight: 500;
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.lead {
+  font-weight: 300;
+}
+pre {
+  color: white;
+}
+h1 small,
+.h1 small {
+  font-weight: 500;
+  color: #5faee3;
+}
+.nav-pills > li.active > a,
+.nav-pills > li > a:hover {
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  border-top: 2px solid #3498db;
+}
+.navbar {
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15);
+  z-index: 98;
+  margin: 0px;
+}
+.navbar-static-top,
+.navbar-fixed-top {
+  border-top: 2px solid #3498db;
+  -webkit-box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px -3px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+}
+.navbar-fixed-bottom {
+  border-bottom: 2px solid #3498db;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.5);
+}
+.navbar-header {
+  float: left;
+}
+.navbar-right {
+  float: right;
+}
+.btn {
+  font-weight: 500;
+}
+.btn-default:hover {
+  color: #555555;
+  background-color: #e1f0fa;
+}
+.label {
+  border-radius: 0;
+}
+.pagination > li > a {
+  border-width: 0;
+  border-bottom-width: 3px;
+}
+.pagination > li > a:first-child {
+  border-left-width: 0;
+}
+.panel {
+  border-width: 0;
+  border-top-width: 3px;
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+.panel-default {
+  border-top-color: #3498db;
+}
+.panel-heading {
+  background: transparent;
+  border-bottom-color: #eeeeee;
+}
+.panel-footer {
+  background: transparent;
+  border-top-color: #eeeeee;
+}
+.progress {
+  -webkit-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.1) inset;
+}
+.well {
+  color: white;
+}
+form {
+  max-width: 350px;
+  padding: 19px 29px 29px;
+  margin: 0 auto;
+}
+form h3 {
+  color: #333;
+}
+form label {
+  font-weight: normal;
+  padding-bottom: 15px;
+}
+.form-group {
+  margin: 0 auto;
+}
+.form-group input {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+.form-group input:first-child {
+  border-top-width: 1px;
+}
+.form-group input:last-child {
+  border-bottom-width: 1px;
+}
+.form-group input:focus {
+  border-width: 1px;
+}
+.form-group button {
+  margin-top: 15px;
+}
+.view {
+  padding-top: 10px;
+  -webkit-transition: all 350ms linear;
+  -moz-transition: all 350ms linear;
+  -o-transition: all 350ms linear;
+  transition: all 350ms linear;
+}
+.view.ng-enter {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.view.ng-enter.ng-enter-active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.view.ng-leave-active {
+  display: none;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  max-height: 0;
+}
+.intro img#logobanner {
+  margin-top: 40px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+#loading-bar .bar {
+  background: #3498db;
+}
+#loading-bar-spinner .spinner-icon {
+  border-top-color: #3498db;
+  border-left-color: #3498db;
+}
+.growl {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+.growl .alert {
+  margin-bottom: -1px;
+}
+.growl-item.ng-enter,
+.growl-item.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+}
+.growl-item.ng-enter,
+.growl-item.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+.growl-item.ng-leave,
+.growl-item.ng-enter.ng-enter-active {
+  opacity: 1;
+}
